@@ -3,9 +3,9 @@ resources:
     type: image
     flags:
       - deploy-ecs-basic
-    integration: dr-ecr
+    integration: dr-awsKeys
     pointer:
-      sourceName: "679404489841.dkr.ecr.us-east-1.amazonaws.com/deploy-ecs-basic"
+      sourceName: "554282422391.dkr.ecr.us-west-2.amazonaws.com/sample_test"
     seed:
       versionName: "latest"
 
@@ -38,7 +38,7 @@ resources:
     type: cluster
     flags:
       - deploy-ecs-basic
-    integration: dr-aws
+    integration: dr-awsIam
     pointer:
-      sourceName : "deploy-ecs-basic" #name of the cluster to which we are deploying
-      region: "us-east-1"
+      sourceName : "awstestcluster" #name of the cluster to which we are deploying
+      region: "us-west-2"
