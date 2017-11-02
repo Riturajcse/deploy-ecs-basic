@@ -34,7 +34,7 @@ resources:
     version:
       count: 1
 
-  - name: deploy-ecs-basic-ecs-cluster
+  - name: deploy-ecs-basic-ecs-cluster_1
     type: cluster
     flags:
       - deploy-ecs-basic
